@@ -1,0 +1,8 @@
+before_script:
+  - npm install -g gulp-cli
+  - npm install
+
+gulp_karma:
+  script:
+    - gulp clean
+    - gulp test

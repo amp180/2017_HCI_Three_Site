@@ -1,0 +1,23 @@
+<form action="">
+    <legend>TopUp Code Form</legend>
+  <div>
+		<label for="Recipient">Recipient</label>
+		<select name="Recipient" aria-describedby="#co_recipient_tip">
+		  <option value="Me">Me</option>
+		  <option value="Adam">Adam</option>
+		  <option value="Dean">Dean</option>
+		  <option value="Mark">Mark</option>
+		</select>
+    <p class="tooltip" role="tooltip" id="co_recipient_tip">Choose which one of your saved numbers to top up.</p>
+	</div>
+
+	<div>
+		<label for="code">Topup Voucher Code</label>
+		<input type="text" id="code" aria-describedby="#co_code_tip" required />
+    <p class="tooltip" role="tooltip" id="co_code_tip" >Enter your 16 digit topup code here.</p>
+	</div>
+
+	<div>
+	 	<button type="button" onclick="alert('Your Top Up Was Sucessful!')">Top Up</button>
+	</div>
+</form>
