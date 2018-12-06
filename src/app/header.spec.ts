@@ -1,5 +1,6 @@
-import {HeaderComponent} from './header';
+import {HeaderComponent} from './header.ts';
 import {TestBed, async} from '@angular/core/testing';
+import { expect, describe, it, beforeEach } from "chai";
 
 describe('header component', () => {
   beforeEach(async(() => {

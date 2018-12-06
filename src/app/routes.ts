@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
-import {MainComponent} from './main';
+import {MainComponent} from './main.ts';
 
 @Component({
   selector: 'fountain-root',

@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { BalanceService } from './balance.service';
+import { Component, Inject } from '@angular/core';
+import { BalanceService } from './balance.service.ts';
 
 
 @Component({
@@ -13,7 +13,7 @@ export class PlanComponent {
  data_texts : any;
  options : any;
 
-  constructor ( public balanceService : BalanceService ) {
+  constructor (@Inject(BalanceService) public balanceService : BalanceService) {
     // http://www.chartjs.org/docs/#chart-configuration-creating-a-chart-with-options
     this.type = 'pie';
     this.options = {
@@ -61,3 +61,6 @@ export class PlanComponent {
     };
   }
 }
+
+
+//const injector = ReflectiveInjector.resolveAndCreate([PlanComponent, BalanceService]);

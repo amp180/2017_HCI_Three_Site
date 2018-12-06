@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import {CommonModule} from '@angular/common';
 
-import { TabsComponent } from './tabs.component';
-import { CardFormComponent } from './cardform.component';
-import { CodeFormComponent } from './codeform.component';
+import { TabsComponent } from './tabs.component.ts';
+import { CardFormComponent } from './cardform.component.ts';
+import { CodeFormComponent } from './codeform.component.ts';
 
 @NgModule({
   imports: [

@@ -1,11 +1,12 @@
 import {TestBed, async} from '@angular/core/testing';
-// import { Injectable } from '@angular/core';
+import { Injectable } from '@angular/core';
 import { Component } from '@angular/core';
+import { expect, describe, it, beforeEach } from "chai";
 
-import { TabsComponent } from './topup/tabs.component';
-import { CardFormComponent } from './topup/cardform.component';
-import { CodeFormComponent } from './topup/codeform.component';
-// import { TopupModule } from './balance';
+import { TabsComponent } from './topup/tabs.component.ts';
+import { CardFormComponent } from './topup/cardform.component.ts';
+import { CodeFormComponent } from './topup/codeform.component.ts';
+import { TopupModule } from './topup/index.ts';
 
 
 @Component({

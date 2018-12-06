@@ -1,12 +1,14 @@
 import {TestBed, async} from '@angular/core/testing';
 import { Injectable } from '@angular/core';
-// import { Component } from '@angular/core';
+import { Component } from '@angular/core';
 import { ChartModule } from 'angular2-chartjs';
+import { expect, describe, it, beforeEach } from "chai";
 
-import {BalanceService} from './balance/balance.service';
-import {BalanceComponent} from './balance/balance.component';
-import {PlanComponent} from './balance/plan.component';
-// import { BalanceModule } from './balance';
+
+import {BalanceService} from './balance/balance.service.ts';
+import {BalanceComponent} from './balance/balance.component.ts';
+import {PlanComponent} from './balance/plan.component.ts';
+import { BalanceModule } from './balance/index.ts';
 
 describe( 'BalanceService', () => {
   let balanceService : BalanceService;

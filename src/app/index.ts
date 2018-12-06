@@ -1,22 +1,22 @@
 import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
-import {routing, RootComponent} from './routes';
+import {routing, RootComponent} from './routes.ts';
 
-import {BalanceModule} from './balance';
-import {TopupModule} from './topup';
-import {LinksModule} from './links';
+import {BalanceModule} from './balance/index.ts';
+import {TopupModule} from './topup/index.ts';
+import {LinksModule} from './links/index.ts';
 
-import {MainComponent} from './main';
-import {HeaderComponent} from './header';
-import {FooterComponent} from './footer';
+import {MainComponent} from './main.ts';
+import {HeaderComponent} from './header.ts';
+import {FooterComponent} from './footer.ts';
 
 @NgModule({
   imports: [
     BrowserModule,
-    routing,
     BalanceModule,
     TopupModule,
     LinksModule,
+    routing,
   ],
   declarations: [
     RootComponent,

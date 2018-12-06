@@ -1,4 +1,4 @@
-import {Component, ElementRef} from '@angular/core';
+import {Component, ElementRef, Inject} from '@angular/core';
 import * as $ from 'jquery/src/jquery';
 
 @Component({
@@ -9,7 +9,7 @@ export class TabsComponent {
  CCTab : boolean;
  COTab : boolean;
 
-  constructor( private el : ElementRef ) {
+  constructor( @Inject(ElementRef) private el : ElementRef ) {
     this.CCTab = true;
     this.COTab = false;
   }

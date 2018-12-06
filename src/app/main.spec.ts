@@ -1,6 +1,7 @@
 import {Component} from '@angular/core';
 import {TestBed, async} from '@angular/core/testing';
-import {MainComponent} from './main';
+import {MainComponent} from './main.ts';
+import { expect, describe, it, beforeEach } from "chai";
 
 @Component({selector: 'fountain-footer', template: ''})
 class MockFooterComponent {}

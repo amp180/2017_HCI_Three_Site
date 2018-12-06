@@ -1,11 +1,11 @@
-import { Component } from '@angular/core';
-import { BalanceService } from './balance.service';
+import { Component, Inject } from '@angular/core';
+import { BalanceService } from './balance.service.ts';
 
 @Component({
   selector: 'mt-balance',
   template:  require( './balance.html' ),
 })
 export class BalanceComponent {
-  constructor ( public balanceService : BalanceService ) {
+  constructor (@Inject(BalanceService) public balanceService : BalanceService) {
   }
 }

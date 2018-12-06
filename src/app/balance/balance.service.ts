@@ -1,6 +1,9 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
+import {BalanceModule} from './index.ts';
 
-@Injectable()
+@Injectable({
+    providedIn: 'root'
+})
 export class BalanceService {
 
   balance : string;

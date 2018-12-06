@@ -2,7 +2,7 @@ import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {HttpModule} from '@angular/http';
 
-import {LinksComponent} from './links.component';
+import {LinksComponent} from './links.component.ts';
 
 @NgModule({
   imports: [

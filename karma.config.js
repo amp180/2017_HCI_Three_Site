@@ -1,4 +1,4 @@
-const conf = require('./gulp.conf');
+const path = require('path');
 
 module.exports = function (config) {
   const configuration = {
@@ -13,24 +13,23 @@ module.exports = function (config) {
       /*'Chrome',*/
       'PhantomJS',
     ],
+    phantomjsLauncher: {
+      // Have phantomjs exit if a ResourceError is encountered (useful if karma exits without killing phantom)
+      exitOnResourceError: true
+    },
     frameworks: [
       'jasmine'
     ],
     files: [
       'node_modules/es6-shim/es6-shim.js',
-      conf.path.src('index.spec.js')
+      path.resolve(__dirname, '.tmp', 'index.js')
     ],
-    preprocessors: {
-      [conf.path.src('index.spec.js')]: [
-        'webpack'
-      ]
-    },
     reporters: ['progress', 'coverage'],
     coverageReporter: {
       type: 'html',
       dir: 'coverage/'
     },
-    webpack: require('./webpack-test.conf'),
+    webpack: require('./webpack-dev.config.js'),
     webpackMiddleware: {
       noInfo: true
     },

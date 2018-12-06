@@ -1,32 +1,11 @@
 {
-  "compilerOptions": {
-    "sourceMap": true,
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "removeComments": false,
-    "noImplicitAny": false,
-    "mapRoot": "./src/",
-    "module": "es6",
-    "moduleResolution": "node",
-    "noEmitOnError": false,
-    "noImplicitAny": false,
-    "outDir": "../dist/",
-    "lib": [ "es6", "dom" ],
-    "sourceMap": true,
-    "target": "es5",
-    "typeRoots": [".", "./node_modules", "./node_modules/@types", "../node_modules/@types/", "@types"],
-    "types": [
-      "node",
-      "jasmine",
-      "es6-shim",
-      "core-js"
-    ]
-  },
-  "compileOnSave": false,
-  "filesGlob": [
-     "src/*.ts",
-    "src/**/*.ts",
-    "src/**/*.tsx",
-    "!node_modules/**"
-  ]
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "experimentalDecorators": true
+    },
+    "types": ["node"],
+
+    "exclude": ["node_modules"],
+    "files": ["./src/index.ts"],
 }

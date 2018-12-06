@@ -2,9 +2,9 @@ import {NgModule} from '@angular/core';
 import { ChartModule } from 'angular2-chartjs';
 import {CommonModule} from '@angular/common';
 
-import {BalanceService} from './balance.service';
-import {BalanceComponent} from './balance.component';
-import {PlanComponent} from './plan.component';
+import {BalanceService } from './balance.service.ts';
+import {BalanceComponent} from './balance.component.ts';
+import {PlanComponent} from './plan.component.ts';
 
 @NgModule({
   imports: [
@@ -18,9 +18,6 @@ import {PlanComponent} from './plan.component';
   exports: [
     BalanceComponent,
     PlanComponent,
-  ],
-  providers: [
-    BalanceService,
   ]
 })
 export class BalanceModule {}
