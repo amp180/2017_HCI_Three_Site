@@ -4,7 +4,7 @@ This website was written by Adam Pegman, Mark Dunne and Dean Laylor for DCU's Hu
 The assignment was to produce an easier to use, more mobile-friendly and more accessible (correct aria tags and semantic html)
 version of a commonly used website, and we chose the "My Three" phone topup service.
 
-#Screenshots
+# Screenshots
 
 ![Screenshot 1](/../master/screenshots/screenshot_1.png)
 
