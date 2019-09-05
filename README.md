@@ -14,6 +14,8 @@ version of a commonly used website, and we chose the "My Three" phone topup serv
 
 ![Screenshot 4](/../master/screenshots/screenshot_mobile.png)
 
+# Github Pages
+http://amp180.github.io/2017_HCI_Three_Site
 
 # Notes
 
